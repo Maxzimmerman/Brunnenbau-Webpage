@@ -1,10 +1,12 @@
 <!DOCTYPE html>
     <html lang="en">
         <head>
+            <link rel="shortcut icon" type="x-icon" href="assets/img/headerLogo.png">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <title>brunnenbau exploration - brunnenbau in hessen</title>
         </head>
@@ -12,72 +14,82 @@
 
 
 
+
          <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light position-fixed bg-light" style="background: white; width: 100%; border-bottom: 1px solid black;">
+        <nav class="navbar navbar-expand-lg position-fixed opacity-100" style="background: white; width: 100%; border-bottom: 1px solid black; opacity: 100; z-index: 2">
           <div class="container-fluid">
-            <img src="img/logowell.gif" alt="" style="height: 45.188px">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span>
-                  <i style="color: #FF6600" class="fa-solid fa-bars"></i>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav position-absolute end-0" style="color: #FF6600">
-                <li class="nav-item">
-                  <div class="mail-section" style="display: flex; align-items: center; margin-right: 40px">
-                      <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>
-                      <a href="x" style="margin: 0px; text-decoration: none; color: #FF6600;">info@brunnenbohrer.com</a>
+              <img src="assets/img/logowell.gif" alt="" style="height: 45.188px; margin: 0px 50px 0px 0px">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#item" aria-controls="item" aria-expanded="false" aria-label="Toggle navigation">
+                          <span>
+                            <i style="color: #FF6600" class="fa-solid fa-bars"></i>
+                          </span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="item">
+                          <ul class="navbar-nav position-absolute end-0" style="color: #FF6600; background: white; padding: 10px; border-radius: 10px 0 10px 10px ">
+                            <li class="nav-item">
+                                <a style="color: #FF6600; text-decoration: none; margin: 0px 10px 0px 0px;" href="#info-section">Dienstleistungen</a>
+                            </li>
+                            <li>
+                                <a style="color: #FF6600; text-decoration: none; margin: 0px 10px 0px 0px" href="#kontact-section">Kontakt</a>
+                            </li>
+                            <li>
+                                <a style="color: #FF6600; text-decoration: none; margin: 0px 20px 0px 0px"  href="#impressum-section">Impressum</a>
+                            </li>
+                            <li class="nav-item">
+                              <div class="mail-section" style="display: flex; align-items: center; margin-right: 10px">
+                                  <i class="fa-solid fa-envelope" style="margin-right: 3px;"></i>
+                                  <a href="x" style="margin: 0px; text-decoration: none; color: #FF6600;">info@brunnenbohrer.com</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <div class="phone-section" style="display: flex; align-items: center; margin-right: 5px;">
+                                  <i class="fa-solid fa-phone" style="margin-right: 3px;"></i>
+                                  <p style="margin: 0px">Mob: +49 171 6850 811</p>
+                              </div>
+                            </li>
+                          </ul>
+                      </div>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <div class="phone-section" style="display: flex; align-items: center; margin-right: 40px;">
-                      <i class="fa-solid fa-phone" style="margin-right: 10px;"></i>
-                      <p style="margin: 0px">Mob: +49 171 6850 811</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+              </div>
           </div>
         </nav>
 
 
 
 
-
         <!-- Img Section -->
-        <div class="img-section">
-            <div class="background-img" style="background-image: url('img/IMG_0319.jpg'); background-attachment: fixed;  background-size: cover; height: 50vh; width: 100%; display: flex; align-items: center; flex-direction: column; justify-content: center">
-                <h1 style="color: #FF6600; font-weight: bolder; font-size: 3rem; margin-bottom: 0px">bohr'n to be wild</h1>
-                <h2 style="color: #FF6600;">Call: +49 171 6850 811</h2>
-            </div>
+        <div class="img-section" id="img-section">
+             <div style="background-image: url('assets/img/IMG_0319.jpg'); background-attachment: fixed; width: auto; height: 500px;  background-size: cover; background-position: center; display: flex; align-items: center; flex-direction: column; justify-content: center; filter: blur(0)">
+                 <h1 style="color: #FF6600; font-weight: bolder; font-size: 2.8rem; margin-bottom: 0px">bohr'n to be wild</h1>
+                 <h2 style="color: #FF6600;">Call: +49 171 6850 811</h2>
+             </div>
         </div>
 
 
 
 
         <!-- Info Section -->
-        <div class="container" style="margin-top: 80px">
-            <div  class="row">
-                <div class="col-12 col-md-6 col-xxl-3 text-center">
-                    <h2 class="mt-5" style="margin-bottom: 1rem">Title Tk</h2>
+        <div class="container" style="margin-top: 50px;" id="info-section">
+                <div class="col-12 text-center" style="margin-bottom: 80px">
+                    <h2>Dienstleistungen</h2>
+                </div>
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); margin-bottom: 2px; margin-top: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Rammbohrverfahren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Trockenbohren ohne<br>Maximaler Bohrdurchmesser: 120 mm<br>Maximale Bohrtiefe: 9 meter</p>
                 </div>
-                <div class="col-12 col-md-6 col-xxl-3 text-center">
-                    <h2 class="mt-5" style="margin-bottom: 1rem">Title Tk</h2>
+                <div class="col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px;padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); margin-top: 2px; margin-bottom: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Verrohrtes Trockenbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 185 mm<br>Maximale Bohrtiefe: 20 meter</p>
                 </div>
-                <div class="col-12 col-md-6 col-xxl-3 text-center">
-                    <h2 class="mt-5" style="margin-bottom: 1rem">Title Tk</h2>
+                <div class="col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); height: 200px; margin-top: 2px; margin-bottom: 2px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Spülbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 190 mm<br>Maximale Bohrtiefe: 50 meter</p>
                 </div>
-                <div class="col-12 col-md-6 col-xxl-3 text-center">
-                    <h2 class="mt-5" style="margin-bottom: 1rem">Title Tk</h2>
+                <div class="col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); margin-top: 2px; margin-bottom: 2px;  height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Imlochhammerbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 145 mm<br>Maximale Bohrtiefe: 50 meter</p>
@@ -89,19 +101,19 @@
 
 
         <!-- Kontact Section -->
-        <div class="container" style="margin-top: 200px; margin-bottom: 200px">
+        <div class="container" style="margin-top: 90px; margin-bottom: 120px" id="kontact-section">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1>Kontakt</h1>
+                    <h2>Kontakt</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-sm-6 mt-2 text-center">
+                <div class="col-12 col-sm-6 mt-5 text-center">
                     <p>Peter Nussbaum</p>
                     <a href="https://www.google.com/maps/place/An+d.+Lachebr%C3%BCcke+5,+63454+Hanau/@50.1346369,8.8940507,17z/data=!3m1!4b1!4m5!3m4!1s0x47bd17291200f2dd:0x4d8d92bf0fcc791b!8m2!3d50.1346369!4d8.8962394" style="color: #FF6600">An der Lachebrücke 5</a><br>
                     <a href="https://www.google.com/maps/place/An+d.+Lachebr%C3%BCcke+5,+63454+Hanau/@50.1346369,8.8940507,17z/data=!3m1!4b1!4m5!3m4!1s0x47bd17291200f2dd:0x4d8d92bf0fcc791b!8m2!3d50.1346369!4d8.8962394" style="color: #FF6600">63454 Hanau am Main</a>
                 </div>
-                <div class="col-12 col-sm-6 mt-2 text-center">
+                <div class="col-12 col-sm-6 mt-5 text-center">
                     <a href="" style="color: #FF6600">Mobil: +49 171 68 50 811</a><br>
                     <a href="" style="color: #FF6600">Festnetz: +49 6181 850 633</a><br>
                     <a href="" style="color: #FF6600">Mail: info@brunnenbohrer.com</a>
@@ -112,14 +124,12 @@
 
 
 
-
-
         <!-- Impossum Section -->
-        <div class="bg-light" style="margin-top: 50px;">
+        <div class="bg-light" style="margin-top: 50px;" id="impressum-section">
             <div class="container">
-                <div class="row">
+                <div class="row text-center" style="padding-top: 0.5rem">
                     <div class="col-12">
-                        <h1 style="font-size: 3rem">Impressum</h1>
+                        <h1>Impressum</h1>
                         <hr>
                     </div>
                 </div>
@@ -141,16 +151,13 @@
                             E-Mail: info@brunnenbohrer.com</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3">
-                        <p style="font-weight: bold">Vertreten durch:</p>
+                        <p style="font-weight: bold">Eingetragen am:</p>
+                        <p>Hanau am Main</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-3">
-                        <p style="font-weight: bold">Eingetragen am</p>
-                        <p>Hanau am Main</p>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <p style="font-weight: bold">Umsatzsteuer-Identifikationsnummer</p>
+                        <p style="font-weight: bold">Umsatzsteuer-Identifikationsnummer:</p>
                         <p>DE12813347</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3">
@@ -159,12 +166,17 @@
                     </div>
                     <div class="col-12 col-sm-6 col-md-3">
                         <p style="font-weight: bold">Zugelassen für:</p>
-                        <p>Hessen<br>
-                            Copyright © 2018 Brunnenbohrer.com. Powered by WordPress. Made in Germany</p>
+                        <p>Hessen<br></p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12" style="font-weight: bold">
+                        <p>Copyright © 2023 </p>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 

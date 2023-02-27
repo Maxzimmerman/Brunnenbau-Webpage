@@ -2,12 +2,14 @@
     <html lang="en">
         <head>
             <link rel="shortcut icon" type="x-icon" href="assets/img/Favicons/favicon-32x32.png">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+            <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+            <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
             <title>brunnenbau exploration - brunnenbau in hessen</title>
             <link rel="stylesheet" href="assets/css/style.css">
         </head>
@@ -19,7 +21,7 @@
          <!-- Navbar -->
         <nav class="navbar navbar-expand-lg position-fixed opacity-100" style="background: white; width: 100%; border-bottom: 1px solid black; opacity: 100; z-index: 2">
           <div class="container-fluid">
-              <img src="assets/img/logowell.gif" alt="" style="height: 45.188px; margin: 0px 50px 0px 0px">
+              <img src="assets/img/logowell.png" alt="" style="height: 45.188px; margin: 0px 50px 0px 0px">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#item" aria-controls="item" aria-expanded="false" aria-label="Toggle navigation">
                           <span>
                             <i style="color: #FF6600" class="fa-solid fa-bars"></i>
@@ -59,10 +61,14 @@
 
 
         <!-- Img Section -->
-        <div class="img-section" id="img-section">
-             <div style="background-image: url('assets/img/newer.png'); background-attachment: fixed; width: auto; height: 500px;  background-size: cover; background-position: center; display: flex; align-items: center; flex-direction: column; justify-content: center; filter: blur(0)">
-                 <h1 style="color: #FF6600; font-weight: bolder; font-size: 2.8rem; margin-bottom: 0px">bohr'n to be wild</h1>
-                 <h2 style="color: #FF6600;">Call: +49 171 6850 811</h2>
+        <div class="img-section responsive-img" id="img-section" style="width: 100%">
+             <div class="" style="background-image: url('assets/img/bohrer.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-position: center; display: flex; align-items: center; flex-direction: column; justify-content: center; height: 600px; width: 100%; background-size: cover; filter: blur(-4px)">
+
+                 <div class="rounded header-background" style="background-color: rgb(255,255, 255, .6);padding: 4px">
+                     <h1 class="header-header" style="color: #FF6600; font-weight: bold; margin-bottom: 0px; filter: blur(0px)">bohr'n to be wild</h1>
+                     <h2 class="header-number" style="color: #FF6600;">Call: +49 171 6850 811</h2>
+                 </div>
+
              </div>
         </div>
 
@@ -75,22 +81,22 @@
                 <h2>Dienstleistungen</h2>
             </div>
             <div class="row" style="display: flex; justify-content: center;">
-                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-bottom: 2px; margin-top: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten" style="border-radius: 10px; padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-bottom: 2px; margin-top: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Rammbohrverfahren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Trockenbohren ohne<br>Maximaler Bohrdurchmesser: 120 mm<br>Maximale Bohrtiefe: 9 meter</p>
                 </div>
-                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px;padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten" style="border-radius: 10px;padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Verrohrtes Trockenbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 185 mm<br>Maximale Bohrtiefe: 20 meter</p>
                 </div>
-                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); height: 200px; margin-top: 2px; margin-bottom: 2px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+                <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); height: 200px; margin-top: 2px; margin-bottom: 2px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Spülbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 190 mm<br>Maximale Bohrtiefe: 50 meter</p>
                 </div>
-                <div class="animation-card m-2 pulse-card col-12 col-md-6 col-xxl-3 text-center" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px;  height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+                <div class="animation-card m-2 pulse-card col-12 col-md-6 col-xxl-3 text-center karten" style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px;  height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
                     <h5>Imlochhammerbohren</h5>
                     <hr style="margin-top: 20px; margin-bottom: 20px;">
                     <p>Maximaler Bohrdurchmesser: 145 mm<br>Maximale Bohrtiefe: 50 meter</p>

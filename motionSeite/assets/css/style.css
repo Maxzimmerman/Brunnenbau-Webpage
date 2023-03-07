@@ -137,6 +137,8 @@
 
 .karten:hover {
   transform: scale(1.1);
+  transition-delay: .2s;
+  transition-duration: .2s;
 }
 
 .header-background:hover {
@@ -151,4 +153,9 @@
 
 .links:hover {
   text-decoration: underline;
+}
+
+.img-main::after {
+  content: '';
+
 }

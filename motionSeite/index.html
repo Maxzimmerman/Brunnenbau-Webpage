@@ -63,7 +63,18 @@
          width: 100%;
          background-size: cover;
          ">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+              <path d="M 8 0 L 0 0 0 8" fill="none" stroke="gray" stroke-width="0.5"/>
+            </pattern>
+            <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+              <rect width="80" height="80" fill="url(#smallGrid)"/>
+            </pattern>
+          </defs>
 
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
         <div class="rounded header-background" style="position: absolute; left: 20px; top: 410px">
             <h1 class="header-header" style="color: #FF6600; font-weight: bold; margin-bottom: 0px; filter: blur(0px)">
                 bohr'n to be wild</h1>
@@ -82,25 +93,25 @@
     </div>
     <div class="row" style="display: flex; justify-content: center;">
         <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten"
-             style="border-radius: 10px; padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-bottom: 2px; margin-top: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+             style="border-radius: 10px; padding-top: 30px;background: #f8f9fa; margin-bottom: 2px; margin-top: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
             <h5>Rammbohrverfahren</h5>
             <hr style="margin-top: 20px; margin-bottom: 20px;">
             <p>Trockenbohren ohne<br>Maximaler Bohrdurchmesser: 120 mm<br>Maximale Bohrtiefe: 9 meter</p>
         </div>
         <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten"
-             style="border-radius: 10px;padding-top: 30px;background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+             style="border-radius: 10px;padding-top: 30px;background:  #f8f9fa; margin-top: 2px; margin-bottom: 2px; height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
             <h5>Verrohrtes Trockenbohren</h5>
             <hr style="margin-top: 20px; margin-bottom: 20px;">
             <p>Maximaler Bohrdurchmesser: 185 mm<br>Maximale Bohrtiefe: 20 meter</p>
         </div>
         <div class="animation-card m-2 col-12 col-md-6 col-xxl-3 text-center karten"
-             style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); height: 200px; margin-top: 2px; margin-bottom: 2px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+             style="border-radius: 10px; padding-top: 30px; background:  #f8f9fa; height: 200px; margin-top: 2px; margin-bottom: 2px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
             <h5>Spülbohren</h5>
             <hr style="margin-top: 20px; margin-bottom: 20px;">
             <p>Maximaler Bohrdurchmesser: 190 mm<br>Maximale Bohrtiefe: 50 meter</p>
         </div>
         <div class="animation-card m-2 pulse-card col-12 col-md-6 col-xxl-3 text-center karten"
-             style="border-radius: 10px; padding-top: 30px; background-image: linear-gradient(to top, #cfd9df 0%, #f8f9fa 100%); margin-top: 2px; margin-bottom: 2px;  height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
+             style="border-radius: 10px; padding-top: 30px; background:  #f8f9fa; margin-top: 2px; margin-bottom: 2px;  height: 200px; margin-right: 2px; margin-left: 2px; width: 300px; box-shadow: 0 3px 12px rgb(0 0 0 / 0.2)">
             <h5>Imlochhammerbohren</h5>
             <hr style="margin-top: 20px; margin-bottom: 20px;">
             <p>Maximaler Bohrdurchmesser: 145 mm<br>Maximale Bohrtiefe: 50 meter</p>
@@ -110,13 +121,14 @@
 
 
 <!-- Kontact Section -->
-<div class="container" style="margin-top: 90px; margin-bottom: 120px" id="kontact-section">
+<div class="container" style="margin-top: 90px; margin-bottom: 120px;" id="kontact-section">
     <div class="row">
         <div class="col-12 text-center">
             <h2>Kontakt</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="container">
+        <div class="row"">
         <div class="col-12 col-sm-6 mt-5 text-center">
             <p>Peter Nussbaum</p>
             <a class="links" href="https://www.google.com/maps/place/An+d.+Lachebr%C3%BCcke+5,+63454+Hanau/@50.1346369,8.8940507,17z/data=!3m1!4b1!4m5!3m4!1s0x47bd17291200f2dd:0x4d8d92bf0fcc791b!8m2!3d50.1346369!4d8.8962394"
@@ -129,6 +141,7 @@
             <a class="links" href="tel:+49 6181 850 633" style="color: #FF6600">Festnetz: +49 6181 850 633</a><br>
             <a class="links" href="mailto:info@brunnenbohrer.com" style="color: #FF6600">Mail: info@brunnenbohrer.com</a>
         </div>
+    </div>
     </div>
 </div>
 
@@ -189,3 +202,4 @@
 
 </body>
 </html>
+
